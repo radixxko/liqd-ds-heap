@@ -110,7 +110,7 @@ describe('- index', function()
 {
 	it('should create heap and pop items', function()
 	{
-		let heap, arr = new Array(), it = 0, sortFn = ( a, b ) => a.value === b.value ? 0 : ( a.value < b.value ? 1 : -1 );
+		let heap = new Heap(), arr = new Array(), it = 0, sortFn = ( a, b ) => a.value === b.value ? 0 : ( a.value < b.value ? 1 : -1 );
 
 		for( let i = 0; i < 1000; ++i )
 		{
